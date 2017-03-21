@@ -1,0 +1,348 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.background {
+    display: block;
+    position: absolute;
+    z-index: -100;
+    width: 100vw;
+    height: 100%;
+    background: url('./../back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--colorgray);
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--colorgray);
+}
+
+:root {
+    --main: #3498DB;
+    --accent: #E74C3C;
+    --accent_2: #FFB03B;
+    --primary: #424242;
+    --secondary: white;
+    --colorgray: #f5f5f5;
+    --tertiary: #d5d5d5;
+    --gray: gray;
+    --font_c: 'Josefin Sans', sans-serif;
+    --font: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 4px 6px -6px gray;
+    -moz-box-shadow: 0 4px 6px -6px gray;
+    box-shadow: 0 4px 6px -6px gray;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.nav_items {
+    font-size: 2.5em;
+    font-family: var(--font);
+    font-weight: 300;
+    color: var(--primary) !important;
+    transition: all 0.3s ease;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.nav_items:hover {
+    color: var(--accent) !important;
+    cursor: pointer;
+    border-bottom-color: var(--accent);
+}
+
+.back {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+.back2 {
+    background-color: var(--secondary);
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.back3 {
+    background-color: var(--colorgray);
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.fit {
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.color_inherit {
+    color: inherit !important;
+    text-decoration: none;
+    background-color: none;
+}
+
+.color_inherit:hover {
+    color: inherit !important;
+    cursor: pointer;
+    background-color: none !important;
+}
+
+.overlay {
+    display: table;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.row-vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row-end {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*padding-bottom: 50px;*/
+}
+
+.download {
+    color: var(--primary);
+    font-family: var(--font_c);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.button {
+    color: var(--main);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--main);
+    padding: 5px;
+    font-weight: 300;
+    font-family: var(--font);
+    font-size: 1.6em;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.button2 {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+}
+
+.position {
+    position: absolute;
+}
+
+.push-top {
+    height: 0;
+    width: 100%;
+}
+
+.push-top2 {
+    height: 40px;
+    width: 100%;
+}
+
+.push-top3 {
+    height: 80px;
+    width: 100%;
+}
+
+.bar {
+    margin: auto !important;
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--main);
+    margin-bottom: 15px !important;
+    margin-top: 3px !important;
+}
+
+.title {
+    font-weight: 700;
+    font-family: var(--font_c);
+    font-size: 2.6em;
+    margin-bottom: 0;
+    color: var(--gray);
+}
+
+#navmain2 {
+    background-color: #ffffff !important;
+    -webkit-box-shadow: 0 4px 6px -6px gray;
+    -moz-box-shadow: 0 4px 6px -6px gray;
+    box-shadow: 0 4px 6px -6px gray;
+}
+
+.login_box {
+    position: relative;
+    background-color: var(--secondary);
+    width: 400px;
+    margin: auto;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 8px 0 gray;
+    -moz-box-shadow: 0 4px 8px 0 gray;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.input_login {
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: var(--main);
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    font-family: var(--font);
+    font-size: 2em;
+    font-weight: 300;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.input_login:focus {
+    border-color: var(--accent_2);
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+    outline: none;
+    border-right: none;
+}
+
+#hidden {
+    visibility: hidden;
+    color: var(--accent) !important;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: var(--main);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+.loading {
+    position: absolute;
+    margin: auto;
+    padding-top: 20%;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.front{
+  z-index: 10;
+}

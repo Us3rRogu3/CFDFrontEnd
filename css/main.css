@@ -10,7 +10,7 @@ html, body {
     z-index: -100;
     width: 100vw;
     height: 100%;
-    /*background: url('http://thetechnews.com/wp-content/uploads/2016/08/3409-pic-3.jpg');*/
+    background: url('./../back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--colorgray);
@@ -26,7 +26,7 @@ body {
 }
 
 :root {
-    --main: #3498DB;
+    --main: #03a9f4;
     --accent: #E74C3C;
     --accent_2: #FFB03B;
     --primary: #424242;
@@ -72,10 +72,15 @@ body {
     border-bottom-width: 2px;
 }
 
-.open .nav_items{
-  color: var(--accent) !important;
-  cursor: pointer;
-  border-bottom-color: var(--accent) !important;
+.open .nav_items {
+    color: var(--accent) !important;
+    cursor: pointer;
+    background-color: transparent !important;
+    border-bottom-color: var(--accent) !important;
+}
+
+.dropdown-menu>li>a:hover {
+    color: inherit !important;
 }
 
 .nav_items:hover {
@@ -101,7 +106,7 @@ body {
     border-left-color: var(--accent_2) !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: var(--secondary);
     border: none;
     border-radius: 0;
@@ -322,6 +327,19 @@ body {
     padding-left: 5px;
 }
 
+.features2 {
+    font-weight: 300;
+    font-family: var(--font_c);
+    font-size: 1.6em;
+    color: var(--main);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    border-left-width: 2px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    padding-left: 5px;
+}
+
 .features:hover {
     text-decoration: none;
     color: var(--accent_2);
@@ -459,6 +477,48 @@ body {
     box-shadow: 0 4px 6px -6px gray;
     border-color: var(--accent_2);
     color: var(--main);
+}
+
+.card {
+    position: relative;
+    background-color: var(--secondary);
+    /*width: 400px;*/
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 8px 0 gray;
+    -moz-box-shadow: 0 4px 8px 0 gray;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.pin_hidden {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 20;
+    font-family: var(--font_c);
+    font-size: 2em;
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--gray);
+    font-weight: 400;
+    visibility: hidden;
+}
+
+
+.chart {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    max-width: 60%;
+    height: auto;
+}
+
+.t2{
+  color: var(--accent);
 }
 
 
