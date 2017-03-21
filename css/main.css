@@ -62,7 +62,7 @@ body {
 }
 
 .nav_items {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: var(--font);
     font-weight: 300;
     color: var(--primary) !important;
@@ -508,7 +508,6 @@ body {
     visibility: hidden;
 }
 
-
 .chart {
     padding-left: 40px;
     padding-right: 40px;
@@ -517,10 +516,13 @@ body {
     height: auto;
 }
 
-.t2{
-  color: var(--accent);
+.t2 {
+    color: var(--accent);
 }
 
+@media query {
+
+}
 
 /*body {
     overflow-x: hidden !important;
