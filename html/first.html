@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Content Rectifier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <script type="text/javascript" src="./../js/jquery-2.1.4.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="./../js/bootstrap.min.js"></script>
+    <link href="./../css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400|Oxygen:400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300|Josefin+Sans:300i,400|Nunito:800" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/animate.css">
+    <!-- <script src="./../js/main.js"></script> -->
+    <!-- <script src="./../js/wow.min.js"></script> -->
+    <!-- <script src="./../js/scrolleffect.js"></script> -->
+</head>
+
+<body>
+    <div class="background" id="backdrop"></div>
+    <nav class="navbar navbar-default navbar-fixed-top slideInDown animated" id="navmain2">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="rotateInUpRight2 text-center"><img src="./../logo_xs.png" alt="" class="img_brand"></div>
+                    <div class="ch_text">
+                        <p>Content Holmes</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collect the nav linksfont, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="nav_items"><a href="#" class="color_inherit">Home</a></li> -->
+                    <li class="nav_items"><a href="#" class="color_inherit">Getting Started</a></li>
+                    <li class="nav_items"><a href="#" class="color_inherit">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav_items" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login / Sign Up <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav_items2"><a href="#" class="color_inherit">Login / Sign Up with <i class="fa fa-facebook" aria-hidden="true"></i>acebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="overlay">
+                <div class="row-vertical-center">
+                    <div class="row animated fadeIn">
+                        <div class="text-center">
+                            <div class="login_box">
+                                <div class="loading">
+                                    <div class="text-center">
+                                        <div class="spinner">
+                                            <div class="rect1"></div>
+                                            <div class="rect2"></div>
+                                            <div class="rect3"></div>
+                                            <div class="rect4"></div>
+                                            <div class="rect5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="text-center" action= "/deletedata" id="forms">
+                                    <div class="push-top2"> </div>
+                                    <p class="title text-center">Delete your data</p>
+                                    <div class="bar"> </div>
+                                    <input class="input_login text-center" type="text" placeholder="email" name="email" id="id" />
+                                    <input class="input_login text-center" type="password" placeholder="password" name="password" id="pass" />
+                                    <!-- <input class="input_login text-center" type="text" placeholder="child name" name="childName" id="childName" /> -->
+                                    <p id="hidden"><i class="fa fa-exclamation" aria-hidden="true"></i> <span id="error_text">Invalid Details</span></p>
+                                    <button type="submit" class="text-center button3 button4" id="myBtn">Login</button>
+                                    <div class="push-top2"> </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer shadow-top">
+        <div class="push-top2"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="text-left">
+                        <p class="title">Links</p>
+                        <a href="#" class="links">Home</a>
+                        <a href="#" class="links">Getting Started</a>
+                        <a href="#" class="links">Contact Us</a>
+                        <a href="#" class="links">Register/Login</a>
+                        <a href="#" class="links">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="text-right">
+                        <p class="title">Contact Us</p>
+                        <p class="links nohighlight">Phone: </p>
+                        <br>
+                        <p class="title">Social Media</p>
+                        <a href="#" class="links inline"><i class="fa fa-facebook" aria-hidden="true"></i>acebook
+</a>
+                        <a href="#" class="links inline"><i class="fa fa-twitter" aria-hidden="true"></i> twitter</a>
+                        <!-- <a href="#" class="links inline">Register/Login</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="push-top2"></div>
+    </footer>
+    <!-- <script type="text/javascript" src="./../options.js"></script> -->
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 Chart.defaults.global.defaultFontColor = "gray";
-Chart.defaults.global.defaultFontFamily = " 'Roboto', sans-serif";
+Chart.defaults.global.defaultFontFamily = "'Josefin Sans', sans-serif";
 Chart.defaults.global.defaultFontSize = 14;
 Chart.defaults.global.animation.easing = "easeOutCirc";
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
         // console.log('click me');
         // console.log($(".main_content").find("#c" + id.toString()).offset().top);
         $("#body").animate({
-            scrollTop: $(".main_content").find("#c" + id.toString()).offset().top
+            scrollTop: $(".main_content").find("#c" + id.toString()).offset().top -100
         }, 'slow');
     });
 });

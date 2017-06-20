@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400|Oxygen:400" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400|Josefin+Sans:700,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300|Josefin+Sans:700,400|Nunito:800" rel="stylesheet">
     <link rel="stylesheet" href="./../css/main.css">
     <link rel="stylesheet" href="./../css/animate.css">
     <!-- <link rel="stylesheet" href="./../css/master.css"> -->
@@ -29,7 +29,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="#">Content Rectifier</a>
+                <a class="navbar-brand" href="#">
+                    <div class="rotateInUpRight2 text-center"><img src="./../logo_xs.png" alt="" class="img_brand"></div>
+                    <div class="ch_text">
+                        <p>Content Holmes</p>
+                    </div>
+                </a>
             </div>
 
             <!-- Collect the nav linksfont, forms, and other content for toggling -->
@@ -84,7 +89,7 @@
                                 <div class="chart">
                                     <canvas id="Child_Name_1_1" width="400px" height="400px"></canvas>
                                 </div>
-                                <script type="text/javascript">
+                                <!-- <script type="text/javascript">
                                     var ctx = document.getElementById("Child_Name_1_1");
 
                                     var myChart = new Chart(ctx, {
@@ -111,6 +116,47 @@
                                                 pointRadius: 5,
                                                 pointHitRadius: 10,
                                                 data: [65, 59, -10, -20, 56, 55, 40],
+                                                spanGaps: false,
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: true,
+                                            scales: {
+                                                yAxes: [{
+                                                    ticks: {
+                                                        beginAtZero: true
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    });
+                                </script> -->
+                                <script type="text/javascript">
+                                    var ctx = document.getElementById("Child_Name_1_1");
+                                    var myChart = new Chart(ctx, {
+                                        type: 'line',
+                                        data: {
+                                            labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"],
+                                            datasets: [{
+                                                label: "My First dataset",
+                                                fill: true,
+                                                lineTension: 0.1,
+                                                backgroundColor: "rgba(52,152,219, 0.4)",
+                                                borderColor: "rgba(52,152,219, 1)",
+                                                borderCapStyle: 'butt',
+                                                borderDash: [],
+                                                borderDashOffset: 0.0,
+                                                borderJoinStyle: 'miter',
+                                                pointBorderColor: "rgba(52,152,219, 1)",
+                                                pointBackgroundColor: "#fff",
+                                                pointBorderWidth: 1,
+                                                pointHoverRadius: 5,
+                                                pointHoverBackgroundColor: "rgba(52,152,219, 1)",
+                                                pointHoverBorderColor: "rgba(231,76,60, 0)",
+                                                pointHoverBorderWidth: 2,
+                                                pointRadius: 5,
+                                                pointHitRadius: 10,
+                                                data: [-16, 0, 0, 0, 0, 0, 0],
                                                 spanGaps: false,
                                             }]
                                         },
@@ -218,6 +264,36 @@
                 <div class="push-top3"></div>
             </div>
         </div>
+        <footer class="footer shadow-top">
+            <div class="push-top2"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="text-left">
+                            <p class="title">Links</p>
+                            <a href="#" class="links">Home</a>
+                            <a href="#" class="links">Getting Started</a>
+                            <a href="#" class="links">Contact Us</a>
+                            <a href="#" class="links">Register/Login</a>
+                            <a href="#" class="links">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="text-right">
+                            <p class="title">Contact Us</p>
+                            <p class="links nohighlight">Phone: </p>
+                            <br>
+                            <p class="title">Social Media</p>
+                            <a href="#" class="links inline"><i class="fa fa-facebook" aria-hidden="true"></i>acebook
+    </a>
+                            <a href="#" class="links inline"><i class="fa fa-twitter" aria-hidden="true"></i> twitter</a>
+                            <!-- <a href="#" class="links inline">Register/Login</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="push-top2"></div>
+        </footer>
     </div>
     <script src="./../js/dashboard.js"></script>
 </body>
